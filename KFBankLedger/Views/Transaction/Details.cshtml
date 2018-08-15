@@ -1,0 +1,50 @@
+﻿@model KFBankLedger.Models.Transaction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionDateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionDateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TransactionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
